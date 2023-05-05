@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamiento</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./src/glider.min.css">
+</head>
+<body>
+    
+    <audio autopla class="musica" id="reproductor">
+        <source src="./musica/ed-sheeran-perfect-lyrics.mp3" type="audio/mp3">
+    </audio>
+    
+    <img class="btn-music" id="btn-music" src="./img/78987e7eb1127a071e504cfee9ffa099.png" alt="">
+    
+    </div>
+
+    <div class="portada-container">
+
+        <div class="avion">
+        </div>
+        <div class="portada-imagen">
+        </div>
+        <div class="portada-texto">
+           <div class="texto-container">
+                <div class="portada-fecha">02.12.2023</div>
+                <div class="portada-superior">
+                    Nos Casamos
+                    </div>
+                    <div class="love"></div>
+                <div class="portada-nombres">
+                    <h1 class="nombre">Antonela</h1>
+                    <h1 class="union">&</h1>
+                    <h1 class="nombre">Jose</h1>
+                </div>
+                <div class="portada-frase">
+                    <img class="comillas-apertura" src="./img/comilla-apertura.svg" alt="">
+                <h2 class="frase">Dame la mano y vamos a darle la vuelta al mundo</h2>
+                <img class="comillas-cierre" src="./img/comilla-cierre.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="avion-m1"></div>
+    <div class="countdown-container">
+        <img src="./img/img_ondas01.svg" alt="">
+        <div class="mundo">
+        </div>
+        <div class="countdown">
+            <div class="reloj" id="reloj">
+                
+            </div>
+            <h1 class="faltan">Faltan</h1>
+            <div class="numeros">
+                <h2 id="dias">12</h2>
+                <h2 id="horas">12</h2>
+                <h2 id="minutos">12</h2>
+                <h2 id="segundos">12</h2>
+                <h3>DÍAS</h3>
+                <h3>HS</h3>
+                <h3>MIN</h3>
+                <h3>SEG</h3>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="avion2">
+    </div>
+
+    <dialog id="modal-civil">
+        <div class="modal-container">
+            <div id="close-civil" class="close-modal">X</div>
+            <div class="icono-modal">
+                <picture class="avion-modal">
+                    <source type="image/webp" srcset="./img/viaje_Grupo04.webp">
+                    <source type="image/png" srcset="./img/viaje_Grupo04.png">
+                    <img class="adorno adorno-1" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-once="false" src="./img/viaje_Grupo04.png" alt="" loading="">
+                  </picture>
+                <img class="circulo-modal" src="./img/img_circuloCeremonia.svg" alt="">   
+            </div>
+            <div class="texto-modal">
+                <h1>¿Asistes al Civil?</h1>
+            </div>
+            <form action="./src/civil.php" method="POST">
+                <div class="opciones-asistencia">
+                    <input checked type="radio" name="confirmacion" id="si-civil"> <label for="si-civil">¡Si, Confirmo!</label>
+                    <input type="radio" name="confirmacion" id="no-civil"> <label for="no-civil">¡No Puedo :(</label>
+                </div>
+                <div class="inputs-container">
+                    <input class="input-modal" required type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo">
+                    <input class="input-modal" type="text" name="detalle" id="detalle" placeholder="Ingrese algun dato importante. Ej:Soy vegetariano">
+                    <button>Enviar</button>
+                </div>
+
+            </form>
+        </div>
+      </dialog>
+
+      <dialog id="modal-fiesta">
+        <div class="modal-container">
+            <div id="close-fiesta" class="close-modal">X</div>
+            <div class="icono-modal">
+                <picture class="avion-modal">
+                    <source type="image/webp" srcset="./img/viaje_Grupo04.webp">
+                    <source type="image/png" srcset="./img/viaje_Grupo04.png">
+                    <img class="adorno adorno-1" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-once="false" src="./img/viaje_Grupo04.png" alt="" loading="">
+                  </picture>
+                <img class="circulo-modal" src="./img/img_circuloCeremonia.svg" alt="">   
+            </div>
+            <div class="texto-modal">
+                <h1>¿Asistes a la fiesta?</h1>
+            </div>
+            <form action="./src/fiesta.php" method="POST">
+                <div class="opciones-asistencia">
+                    <input checked type="radio" name="confirmacion" id="si-fiesta"> <label for="si-fiesta">¡Si, Confirmo!</label>
+                    <input type="radio" name="confirmacion" id="no-fiesta"> <label for="no-fiesta">¡No Puedo :(</label>
+                </div>
+                <div class="inputs-container">
+                    <input class="input-modal" required type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo">
+                    <input class="input-modal" type="text" name="detalle" id="detalle" placeholder="Ingrese algun dato importante. Ej:Soy vegetariano">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+      </dialog>
+
+      <dialog id="modal-cancion">
+        <div class="modal-container-cancion">
+            <div id="close-cancion" class="close-modal-cancion">X</div>
+            <div class="icono-modal-cancion">
+                <picture class="cancion-modal">
+                    <source type="image/webp" srcset="./img/viaje_Grupo04.webp">
+                    <source type="image/png" srcset="./img/viaje_Grupo04.png">
+                    <img class="adorno adorno-1" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-once="false" src="./img/viaje_Grupo04.png" alt="" loading="">
+                  </picture>
+                <img class="cancion-modal" src="./img/img_circuloCanciones1.svg" alt="">   
+            </div>
+            <div class="texto-modal-cancion">
+                <h1>Sugerir Cancion</h1>
+            </div>
+            <form action="./src/musica.php" mothod="GET">
+                <div class="inputs-container-cancion">
+                    <input class="input-modal-cancion" required type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                    <input class="input-modal-cancion" type="text" name="cancion" id="cancion" placeholder="Ingrese nombre de la cancion">
+                    <input class="input-modal-cancion" type="text" name="link" id="link" placeholder="Coloca aqui el link">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+
+      </dialog>
+
+      <dialog id="modal-regalos">
+        <div class="modal-container-regalos">
+            <div id="close-regalos" class="close-modal-regalos">X</div>
+            <div class="icono-modal-regalos">
+                <picture class="regalos-modal">
+                    <source type="image/webp" srcset="./img/viaje_Grupo04.webp">
+                    <source type="image/png" srcset="./img/viaje_Grupo04.png">
+                    <img class="adorno adorno-1" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-once="false" src="./img/viaje_Grupo04.png" alt="" loading="">
+                  </picture>
+                <img class="regalos-modal" src="./img/img_circuloRegalo.svg" alt="">   
+            </div>
+            <div class="texto-modal-regalos">
+                <h1>Regalos</h1>
+                <h2>Titular:Jose Maria Luis Rodriguez Campora</h2>
+                <h2>CBU:1500689100068962173428</h2>
+                <h2>Alias:ARO.SILLON.SIGNO</h2>
+                <h2>IBAN:ES94 0049 5255 6223 1604 1391</h2>
+                <h2>o en la "cajita" en el salon!</h2>
+            </div>
+        </div>
+      </dialog>
+      <dialog id="modalMapa" open>
+        <div class="modal-title"></div>
+        <div id="googleMap"></div>
+        <a class="ampliar-mapa" href=""></a>
+      </dialog>
+    
+    <div class="opciones-container">
+        <div class="civil-container">
+            <div class="icono">
+            </div>
+            <div class="titulo-opcion">
+                <h1>Civil</h1>
+            </div>
+            <div class="dia">
+                <h2>Día</h2>
+                <p>Sabado 2 de Diciembre</p>
+                <button id="agendar-civil">Agendar</button>
+            </div>
+            <div class="lugar">
+                <h2>Lugar</h2>
+                <p>Registro Civil Miramar</p>
+                <button id="btn-asistencia">Confirmar Asistencia</button>
+            </div>
+            <div class="direccion">
+                <h2>Direccion</h2>
+                <p>Calle 17 1628, Miramar, Provincia de Buenos Aires, Argentina</p>
+                <button id="btn-direccion-civil" data-evento="Civil">¿Como llegar?</button>
+            </div>
+
+        </div>
+        <div class="civil-container">
+            <div class="icono" id="fiesta">
+                
+            </div>
+            <div class="titulo-opcion">
+                <h1>Fiesta</h1>
+            </div>
+            <div class="dia">
+                <h2>Día</h2>
+                <p>Sabado 2 de Diciembre</p>
+                <button id="agendar-fiesta">Agendar</button>
+            </div>
+            <div class="lugar">
+                <h2>Lugar</h2>
+                <p>Estancia San Vicente</p>
+                <button id="btn-asistencia2">Confirmar Asistencia</button>
+            </div>
+            <div class="direccion">
+                <h2>Direccion</h2>
+                <p>Ruta 88 Km. 30,5 Otamendi, Buenos Aires</p>
+                <button id="btn-direccion-fiesta" data-evento="Fiesta">¿Como llegar?</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <picture class="adorno-mapa">
+        <source type="image/webp" srcset="./img/viaje_Grupo02_A.webp">
+        <source type="image/png" srcset="./img/viaje_Grupo02_A.png">
+        <img class="adorno adorno-1" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-once="false" src="./img/viaje_Grupo02_A.png" alt="" loading="lazy">
+      </picture>
+
+    <div class="onda2">
+        <img src="./img/img_ondas02.svg" alt="">
+    </div>
+
+    <picture class="adorno-palmera">
+        <source type="image/webp" srcset="./img/viaje_Grupo03_A.webp">
+        <source type="image/png" srcset="./img/viaje_Grupo03_A.png">
+        <img class="adorno adorno-1" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-once="false" src="./img/viaje_Grupo03_A.png" alt="" loading="lazy">
+      </picture>
+    
+    <div class="galeria-container">
+        <div class="galeria-texto">
+            <h1>Retratos de Nuestro Amor</h1>
+            <p>Un minuto, un segundo, un instante que queda en la eternidad</p>
+            <div class="icono-foto">
+            </div>
+        </div>
+        <!-- <div class="galeria" id="galeria">
+            <img class="slidersection" src="./img/si/20180809_141206.jpg" alt="">
+            <img class="slidersection" src="./img/si/DSC00600.jpg" alt="">
+            <img class="slidersection" src="./img/si/thumbnail_IMG_0663 (1).jpg" alt="">
+            <img class="slidersection" src="./img/si/thumbnail_IMG_2170.jpg" alt="">
+            <img class="slidersection" src="./img/si/thumbnail_IMG_2400.jpg" alt="">
+            <img class="slidersection" src="./img/si/thumbnail_IMG_8152.jpg" alt="">
+        </div>
+        <div class="galeria-m" id="galeria-m">
+            <img class="slidersection-m" src="./img/si/20180809_141206.jpg" alt="">
+            <img class="slidersection-m" src="./img/si/DSC00600.jpg" alt="">
+            <img class="slidersection-m" id="foto4" src="./img/si/thumbnail_IMG_0663 (1).jpg" alt="">
+            <img class="slidersection-m" src="./img/si/thumbnail_IMG_2170.jpg" alt="">
+            <img class="slidersection-m" src="./img/si/thumbnail_IMG_2400.jpg" alt="">
+            <img class="slidersection-m" src="./img/si/thumbnail_IMG_8152.jpg" alt="">
+        </div>
+        <div class="btns">
+            <p class="btn" id="btn-galeria1"></p>
+            <p class="btn active" id="btn-galeria2"></p>
+            <p class="btn" id="btn-galeria3"></p>
+            <p class="btn" id="btn-galeria4"></p>
+        </div>
+        <div class="btns-m">
+            <p class="btn" id="btn-m-galeria1"></p>
+            <p class="btn active" id="btn-m-galeria2"></p>
+            <p class="btn" id="btn-m-galeria3"></p>
+            <p class="btn" id="btn-m-galeria4"></p>
+        </div>
+    </div> -->
+    <div class="carousel">
+        <div class="carousel__contenedor">
+            <button aria-label="Anterior" class="carousel__anterior">
+                <i class="fa-solid fa-chevron-left" style="color: #d9b540;"></i>
+            </button>
+            <div class="carousel__lista">
+                <div class="carousel__elemento"><img src="./img/si/20180809_141206.jpg" alt=""></div>
+                <div class="carousel__elemento"><img src="./img/si/DSC00600.jpg" alt=""></div>
+                <div class="carousel__elemento"><img id="foto4" src="./img/si/thumbnail_IMG_0663 (1).jpg" alt=""></div>
+                <div class="carousel__elemento"><img src="./img/si/thumbnail_IMG_2170.jpg" alt=""></div>
+                <div class="carousel__elemento"><img src="./img/si/thumbnail_IMG_2400.jpg" alt=""></div>
+                <div class="carousel__elemento"><img src="./img/si/thumbnail_IMG_8152.jpg" alt=""></div>
+            </div>
+            <button aria-label="Siguiente" class="carousel__siguiente">
+                <i class="fa-solid fa-chevron-right" style="color: #d9b540;"></i>
+            </button>
+        </div>
+        <div role="tablist" class="carousel__indicadores"></div>
+    </div>
+    </div>
+
+    <div class="avion3">
+    </div>
+
+<div class="detalles-container">
+    <div class="detalles-texto">
+        <h1>Fiesta</h1>
+        <h3>Hagamos juntos una fiesta épica. Aquí algunos detalles a tener en cuenta.</h3>
+    </div>
+    
+    <div class="option-card-container">
+        <div class="option-card">
+            <h1>Musica</h1>
+            <div class="icono-card">
+            
+            </div>
+            <p>¿Cuál es la canción que no debe faltar en la PlayList de la fiesta?</p>
+            <button id="btn-musica">Sugerir Cancion</button>
+        </div>  
+    </div>
+</div>
+
+<div class="onda3">
+    <img src="./img/img_ondas04.svg" alt="">
+</div>
+
+<picture class="adorno-mundo">
+    <source type="image/webp" srcset="./img/viaje_Grupo04_A.webp">
+    <source type="image/png" srcset="./img/viaje_Grupo04_A.png">
+    <img class="adorno adorno-1" src="./img/viaje_Grupo04_A.png" alt="">
+  </picture>
+
+<div class="regalos-container">
+    <h1>Regalos</h1>
+    <h3>Si deseas regalarnos algo más que tu hermosa presencia...</h3>
+    <div class="icono-regalo">
+    </div>
+    <button id="btn-regalos">Ver más</button>
+</div>
+
+
+
+    <picture class="adorno-anteojos">
+        <source type="image/webp" srcset="./img/viaje_Grupo05_A.webp">
+        <source type="image/png" srcset="./img/viaje_Grupo05_A.png">
+        <img class="adorno adorno-1" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-once="false" src="./img/viaje_Grupo05_A.png" alt="" loading="lazy">
+      </picture>
+    
+    
+      <picture class="adorno-sombrero">
+        <source type="image/webp" srcset="./img/viaje_Grupo05_B.webp">
+        <source type="image/png" srcset="./img/viaje_Grupo05_B.png">
+        <img class="adorno adorno-2" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000" data-aos-once="false" src="./img/viaje_Grupo05_B.png" alt="" loading="lazy">
+      </picture>
+
+
+<script src="./src/2e013aabe0.js"></script>
+<script src="./src/glider.min.js"></script>
+<script src="./src/jquery-3.6.3.min.js"></script>
+<script src="./src/lottie.min.js"></script>
+<script src="./src/jquery.slides.js"></script>
+<script src="./index.js"></script>
+<script src="./src/carousel.js"></script>
+
+</body>
+</html>
