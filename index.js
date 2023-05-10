@@ -1,5 +1,11 @@
 const reproductor=document.getElementById('reproductor')
 const btnMusic=document.getElementById('btn-music')
+const confirmSiCivil = document.getElementById('si-civil')
+const confirmNoCivil = document.getElementById('no-civil')
+const confirmSiFiesta = document.getElementById('si-fiesta')
+const confirmNoFiesta = document.getElementById('no-fiesta')
+
+
 btnMusic.addEventListener('click',()=>{
   if(reproductor.paused == true){
     reproductor.play()
@@ -8,166 +14,29 @@ btnMusic.addEventListener('click',()=>{
   }
 })
 
-  // const galeria = document.getElementById('galeria')
+confirmSiFiesta.addEventListener('change',()=>{
+  if(confirmSiFiesta.checked){
+    confirmNoFiesta.checked = false
+  }
+})
 
-  // const btn1 = document.getElementById('btn-galeria1')
-  // const btn2 = document.getElementById('btn-galeria2')
-  // const btn3 = document.getElementById('btn-galeria3')
-  // const btn4 = document.getElementById('btn-galeria4')
+confirmNoFiesta.addEventListener('change',()=>{
+  if(confirmNoFiesta.checked){
+    confirmSiFiesta.checked = false
+  }
+})
 
-  // var margin1 = 0 + 'px'
-  // var margin2 = -440+ 'px'
-  // var margin3 = -395-475 + 'px' 
-  // var margin4 = -395-525-425 + 'px' 
+confirmSiCivil.addEventListener('change',()=>{
+  if(confirmSiCivil.checked){
+    confirmNoCivil.checked = false
+  }
+})
 
-  // galeria.addEventListener('transitionstart',()=>{
-  //   if(galeria.style.marginLeft == margin1){
-  //     btn1.classList.add('active')
-  //   }else{
-  //     btn1.classList.remove('active')
-  //   }
-  //   if(galeria.style.marginLeft == margin2){
-  //     btn2.classList.add('active')
-  //   }else{
-  //     btn2.classList.remove('active')
-  //   }
-  //   if(galeria.style.marginLeft == margin3){
-  //     btn3.classList.add('active')
-  //   }else{
-  //     btn3.classList.remove('active')
-  //   }
-  //   if(galeria.style.marginLeft == margin4){
-  //     btn4.classList.add('active')
-  //   }else{
-  //     btn4.classList.remove('active')
-  //   }
-  // })
-
-  // btn1.addEventListener('click',()=>{
-  //   galeria.style.marginLeft = margin1
-  //   galeria.style.transition = 'all 0.5s'
-  // })
-
-
-  // btn2.addEventListener('click',()=>{
-  //   galeria.style.marginLeft =  margin2
-  //   galeria.style.transition = 'all 0.5s'
-  // })
-
-  // btn3.addEventListener('click',()=>{
-
-  //   galeria.style.marginLeft = margin3 
-  //   galeria.style.transition = 'all 0.5s'
-  // })
-
-  // btn4.addEventListener('click',()=>{
-
-  //   galeria.style.marginLeft = margin4
-  //   galeria.style.transition = 'all 0.5s'
-  // })
-
-//   const slider = document.getElementById('galeria');
-//   let sliderSection = document.querySelectorAll('.slidersection');
-//   let sliderSectionLast = sliderSection[sliderSection.length -1];
-  
-//   slider.insertAdjacentElement('afterbegin',sliderSectionLast);
-  
-//   const interval = setInterval(()=>{
-//       Next();
-//   },4000);
-  
-  
-//   function Next(){
-//     let sliderSectionFirst = document.querySelectorAll('.slidersection')[0];
-//     slider.style.marginLeft = '-87%'
-//     slider.style.transition = 'all 1s'
-//     setTimeout(function(){
-//         slider.style.transition = 'none'
-//         slider.insertAdjacentElement('beforeend',sliderSectionFirst);
-//         slider.style.marginLeft = '-55.8%'
-//     },3000)
-// }
-
-// const sliderM = document.getElementById('galeria-m');
-// let sliderSectionM = document.querySelectorAll('.slidersection-m');
-// let sliderSectionLastM = sliderSection[sliderSection.length -1];
-
-// sliderM.insertAdjacentElement('afterbegin',sliderSectionLastM);
-
-// const intervalM = setInterval(()=>{
-//     Next();
-// },4000);
-
-
-// function Next(){
-//   let sliderSectionFirstM = document.querySelectorAll('.slidersection-m')[0];
-//   sliderM.style.marginLeft = '-87%'
-//   sliderM.style.transition = 'all 1s'
-//   setTimeout(function(){
-//       sliderM.style.transition = 'none'
-//       sliderM.insertAdjacentElement('beforeend',sliderSectionFirstM);
-//       sliderM.style.marginLeft = '-55.8%'
-//   },3000)
-// }
-  
-
-//BOTONES Movil
-
-// const btn1M = document.getElementById('btn-m-galeria1')
-// const btn2M = document.getElementById('btn-m-galeria2')
-// const btn3M = document.getElementById('btn-m-galeria3')
-// const btn4M = document.getElementById('btn-m-galeria4')
-
-// var margin1M = 0 + 'px'
-// var margin2M = -400+ 'px'
-// var margin3M = -400-400 + 'px' 
-// var margin4M = -400-400-400 + 'px' 
-
-// galeria.addEventListener('transitionstart',()=>{
-//   if(galeria.style.marginLeft == margin1M){
-//     btn1M.classList.add('active')
-//   }else{
-//     btn1M.classList.remove('active')
-//   }
-//   if(galeria.style.marginLeft == margin2M){
-//     btn2M.classList.add('active')
-//   }else{
-//     btn2M.classList.remove('active')
-//   }
-//   if(galeria.style.marginLeft == margin3M){
-//     btn3M.classList.add('active')
-//   }else{
-//     btn3M.classList.remove('active')
-//   }
-//   if(galeria.style.marginLeft == margin4M){
-//     btn4M.classList.add('active')
-//   }else{
-//     btn4M.classList.remove('active')
-//   }
-// })
-
-// btn1M.addEventListener('click',()=>{
-//   galeria.style.marginLeft = margin1M
-//   galeria.style.transition = 'all 0.5s'
-// })
-
-
-// btn2M.addEventListener('click',()=>{
-//   galeria.style.marginLeft =  margin2M
-//   galeria.style.transition = 'all 0.5s'
-// })
-
-// btn3M.addEventListener('click',()=>{
-
-//   galeria.style.marginLeft = margin3M 
-//   galeria.style.transition = 'all 0.5s'
-// })
-
-// btn4M.addEventListener('click',()=>{
-
-//   galeria.style.marginLeft = margin4M
-//   galeria.style.transition = 'all 0.5s'
-// })
+confirmNoCivil.addEventListener('change',()=>{
+  if(confirmNoCivil.checked){
+    confirmSiCivil.checked = false
+  }
+})
 
 //Animaciones
 

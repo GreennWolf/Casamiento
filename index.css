@@ -668,7 +668,7 @@ margin-top: 20px;
 #modal-civil {
     border: 0;
     margin: auto;
-    width: 500px;
+    width: 40%;
     height: 450px;
     box-shadow: 0px 0px 15px -4px #444;
     border-radius: 10%;
@@ -676,25 +676,31 @@ margin-top: 20px;
     z-index: 1;
     margin-top: 150px;
 }
-    .modal-container {
+
+.modal-container {
     width: 100%;
     height: 100%;
     background-color: #fff;
     border-radius: 6%;
 }
 
+.icono-modal{
+    display: flex;
+    justify-content: center;
+}
+
 .avion-modal img {
-    width: 390px;
+    width: 90%;
     position: absolute;
-    margin-top: -130px;
-    margin-left: 50px;
+    margin-top: -28%;
+    margin-left: -30%;
     z-index: -1;
 }
 
 .circulo-modal {
-    width: 500px;
-    height: 150px;
-    margin-top: -75px;
+    width: 30%;
+    height: 10%;
+    margin-top: -15%;
 }
 
 .texto-modal h1 {
@@ -705,6 +711,7 @@ margin-top: 20px;
     font-size: 40px;
 }
 
+
 .opciones-asistencia {
     font-family: var(--fuente4);
     color: #9E7605;
@@ -713,6 +720,7 @@ margin-top: 20px;
     justify-content: space-evenly;
     width: 100%;
 }
+
 
 .opciones-asistencia label {
     margin-left: -70px;
@@ -743,7 +751,7 @@ margin-top: 20px;
     color:#D6B751;
     font-weight: bold;
     font-size: 16px;
-    margin-top: -2px;
+    margin-top: 0px;
     position: absolute;
     text-align: center;
 
@@ -795,135 +803,20 @@ margin-top: 20px;
 #modal-fiesta {
     border: 0;
     margin: auto;
-    width: 500px;
-    height: 450px;
+    width: 40%;
+    height: 450;
     box-shadow: 0px 0px 15px -4px #444;
     border-radius: 10%;
     overflow: visible;
     z-index: 1;
     margin-top: 150px;
 }
-    .modal-container {
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    border-radius: 6%;
-}
-
-.avion-modal img {
-    width: 390px;
-    position: absolute;
-    margin-top: -130px;
-    margin-left: 50px;
-    z-index: -1;
-}
-
-.circulo-modal {
-    width: 500px;
-    height: 150px;
-    margin-top: -75px;
-}
-
-.texto-modal h1 {
-    font-family: var(--fuente4);
-    margin-left: 90px;
-    color: #3a4d57;
-    margin-bottom: 30px;
-    font-size: 40px;
-}
-
-.opciones-asistencia {
-    font-family: var(--fuente4);
-    color: #9E7605;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.opciones-asistencia label {
-    margin-left: -70px;
-}
-
-.inputs-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.input-modal {
-    width: 80%;
-    height: 30px;
-    margin-left: 60px;
-    margin-top: 30px;
-    border: none;
-    border-bottom: 2px solid #d9b540;
-    font-family: var(--fuente2);
-    font-weight: bold;
-    text-align: center;
-    
-}
-
-.input-modal::placeholder {
-    width: 100%;
-    color:#D6B751;
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: -2px;
-    position: absolute;
-    text-align: center;
-
-}
-
-.input-modal:focus {
-    outline: none;
-    border-bottom: none;
-}
-
-.inputs-container button {
-    margin-top: 40px;
-    border-radius: 70px;
-    width: 110px;
-    height: 50px;
-    margin-left: 190px;
-    background-color: #3A4D57;
-    color: #fff;
-    font-family: var(--fuente2);
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#si-fiesta {
-    cursor: pointer;
-}
-
-#no-fiesta {
-    cursor: pointer;
-}
-
-.close-modal {
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    margin-left: 465px;
-    border-radius: 50%;
-    background-color: #9E7605;
-    position: absolute;
-    line-height: 37px;
-    font-size: 25px;
-    padding-left: 12px;
-    padding-top: 2px;
-    font-family: var(--fuente2);
-    cursor: pointer;
-}
 
 #modal-cancion {
     border: 0;
     margin: auto;
-    width: 500px;
-    height: 450px;
+    width: 40%;
+    height: 450;
     box-shadow: 0px 0px 15px -4px #444;
     border-radius: 10%;
     overflow: visible;
@@ -1026,7 +919,7 @@ margin-top: 20px;
 #modal-regalos {
     border: 0;
     margin: auto;
-    width: 500px;
+    width: 40%;
     height: 450px;
     box-shadow: 0px 0px 15px -4px #444;
     border-radius: 10%;
@@ -1147,6 +1040,7 @@ margin-top: 20px;
     height: 100% !important;
     object-fit: cover;
 }
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     
@@ -1725,10 +1619,6 @@ margin-top: 20px;
         margin-left: -50%;
     }
     
-    /* .active {
-        background-color: #d9b540;
-    } */
-    
     .adorno-mundo img {
         width: 40%;
         margin-left: -15%;
@@ -1881,8 +1771,8 @@ margin-top: 20px;
     #modal-civil {
         border: 0;
         margin: auto;
-        width: 500px;
-        height: 450px;
+        width: 40%;
+        height: 50%;
         box-shadow: 0px 0px 15px -4px #444;
         border-radius: 10%;
         overflow: visible;
@@ -1897,10 +1787,10 @@ margin-top: 20px;
     }
     
     .avion-modal img {
-        width: 390px;
+        width: 90%;
         position: absolute;
-        margin-top: -130px;
-        margin-left: 50px;
+        margin-top: -30%;
+        margin-left: -0.5%;
         z-index: -1;
     }
     
@@ -1912,23 +1802,23 @@ margin-top: 20px;
     
     .texto-modal h1 {
         font-family: var(--fuente4);
-        margin-left: 90px;
+        margin-left: 50px;
         color: #3a4d57;
-        margin-bottom: 30px;
-        font-size: 40px;
+        margin-bottom: 50px;
+        font-size: 30px;
     }
     
     .opciones-asistencia {
         font-family: var(--fuente4);
         color: #9E7605;
-        font-size: 20px;
+        font-size: 15px;
         display: flex;
         justify-content: space-evenly;
         width: 100%;
     }
     
     .opciones-asistencia label {
-        margin-left: -70px;
+        margin-left: -10px;
     }
     
     .inputs-container {
@@ -1941,7 +1831,7 @@ margin-top: 20px;
     .input-modal {
         width: 80%;
         height: 30px;
-        margin-left: 60px;
+        margin-left: 30px;
         margin-top: 30px;
         border: none;
         border-bottom: 2px solid #d9b540;
@@ -1956,7 +1846,7 @@ margin-top: 20px;
         color:#D6B751;
         font-weight: bold;
         font-size: 16px;
-        margin-top: -2px;
+        margin-top: 0px;
         position: absolute;
         text-align: center;
     
@@ -1972,7 +1862,7 @@ margin-top: 20px;
         border-radius: 70px;
         width: 110px;
         height: 50px;
-        margin-left: 190px;
+        margin-left: 120px;
         background-color: #3A4D57;
         color: #fff;
         font-family: var(--fuente2);
@@ -1993,7 +1883,8 @@ margin-top: 20px;
         width: 40px;
         height: 40px;
         color: #fff;
-        margin-left: 465px;
+        margin-left: 90%;
+        margin-top: -4%;
         border-radius: 50%;
         background-color: #9E7605;
         position: absolute;
@@ -2024,10 +1915,10 @@ margin-top: 20px;
     }
     
     .avion-modal img {
-        width: 390px;
+        width: 90%;
         position: absolute;
-        margin-top: -130px;
-        margin-left: 50px;
+        margin-top: -30%;
+        margin-left: -0.5%;
         z-index: -1;
     }
     
@@ -2039,23 +1930,23 @@ margin-top: 20px;
     
     .texto-modal h1 {
         font-family: var(--fuente4);
-        margin-left: 90px;
+        margin-left: 50px;
         color: #3a4d57;
-        margin-bottom: 30px;
-        font-size: 40px;
+        margin-bottom: 50px;
+        font-size: 30px;
     }
     
     .opciones-asistencia {
         font-family: var(--fuente4);
         color: #9E7605;
-        font-size: 20px;
+        font-size: 15px;
         display: flex;
         justify-content: space-evenly;
         width: 100%;
     }
     
     .opciones-asistencia label {
-        margin-left: -70px;
+        margin-left: -10px;
     }
     
     .inputs-container {
@@ -2068,7 +1959,7 @@ margin-top: 20px;
     .input-modal {
         width: 80%;
         height: 30px;
-        margin-left: 60px;
+        margin-left: 30px;
         margin-top: 30px;
         border: none;
         border-bottom: 2px solid #d9b540;
@@ -2083,7 +1974,7 @@ margin-top: 20px;
         color:#D6B751;
         font-weight: bold;
         font-size: 16px;
-        margin-top: -2px;
+        margin-top: 0px;
         position: absolute;
         text-align: center;
     
@@ -2099,7 +1990,7 @@ margin-top: 20px;
         border-radius: 70px;
         width: 110px;
         height: 50px;
-        margin-left: 190px;
+        margin-left: 120px;
         background-color: #3A4D57;
         color: #fff;
         font-family: var(--fuente2);
@@ -2120,7 +2011,8 @@ margin-top: 20px;
         width: 40px;
         height: 40px;
         color: #fff;
-        margin-left: 465px;
+        margin-left: 90%;
+        margin-top: -4%;
         border-radius: 50%;
         background-color: #9E7605;
         position: absolute;
@@ -2270,7 +2162,7 @@ margin-top: 20px;
     
     .texto-modal-regalos h1 {
         font-family: var(--fuente4);
-        margin-left: 190px;
+        margin-left: 100px;
         color: #3a4d57;
         margin-bottom: 30px;
         font-size: 40px;
@@ -2819,10 +2711,6 @@ margin-top: 20px;
         margin-left: -50%;
     }
     
-    /* .active {
-        background-color: #d9b540;
-    } */
-    
     .adorno-mundo img {
         width: 40%;
         margin-left: -15%;
@@ -2991,10 +2879,10 @@ margin-top: 20px;
     }
     
     .avion-modal img {
-        width: 390px;
+        width: 90%;
         position: absolute;
-        margin-top: -130px;
-        margin-left: 50px;
+        margin-top: -30%;
+        margin-left: -0.5%;
         z-index: -1;
     }
     
@@ -3006,23 +2894,23 @@ margin-top: 20px;
     
     .texto-modal h1 {
         font-family: var(--fuente4);
-        margin-left: 90px;
+        margin-left: 50px;
         color: #3a4d57;
-        margin-bottom: 30px;
-        font-size: 40px;
+        margin-bottom: 50px;
+        font-size: 30px;
     }
     
     .opciones-asistencia {
         font-family: var(--fuente4);
         color: #9E7605;
-        font-size: 20px;
+        font-size: 15px;
         display: flex;
         justify-content: space-evenly;
         width: 100%;
     }
     
     .opciones-asistencia label {
-        margin-left: -70px;
+        margin-left: -10px;
     }
     
     .inputs-container {
@@ -3035,7 +2923,7 @@ margin-top: 20px;
     .input-modal {
         width: 80%;
         height: 30px;
-        margin-left: 60px;
+        margin-left: 30px;
         margin-top: 30px;
         border: none;
         border-bottom: 2px solid #d9b540;
@@ -3050,7 +2938,7 @@ margin-top: 20px;
         color:#D6B751;
         font-weight: bold;
         font-size: 16px;
-        margin-top: -2px;
+        margin-top: 0px;
         position: absolute;
         text-align: center;
     
@@ -3066,7 +2954,7 @@ margin-top: 20px;
         border-radius: 70px;
         width: 110px;
         height: 50px;
-        margin-left: 190px;
+        margin-left: 120px;
         background-color: #3A4D57;
         color: #fff;
         font-family: var(--fuente2);
@@ -3087,7 +2975,8 @@ margin-top: 20px;
         width: 40px;
         height: 40px;
         color: #fff;
-        margin-left: 465px;
+        margin-left: 90%;
+        margin-top: -4%;
         border-radius: 50%;
         background-color: #9E7605;
         position: absolute;
@@ -3118,10 +3007,10 @@ margin-top: 20px;
     }
     
     .avion-modal img {
-        width: 390px;
+        width: 90%;
         position: absolute;
-        margin-top: -130px;
-        margin-left: 50px;
+        margin-top: -30%;
+        margin-left: -0.5%;
         z-index: -1;
     }
     
@@ -3133,23 +3022,23 @@ margin-top: 20px;
     
     .texto-modal h1 {
         font-family: var(--fuente4);
-        margin-left: 90px;
+        margin-left: 50px;
         color: #3a4d57;
-        margin-bottom: 30px;
-        font-size: 40px;
+        margin-bottom: 50px;
+        font-size: 30px;
     }
     
     .opciones-asistencia {
         font-family: var(--fuente4);
         color: #9E7605;
-        font-size: 20px;
+        font-size: 15px;
         display: flex;
         justify-content: space-evenly;
         width: 100%;
     }
     
     .opciones-asistencia label {
-        margin-left: -70px;
+        margin-left: -10px;
     }
     
     .inputs-container {
@@ -3162,7 +3051,7 @@ margin-top: 20px;
     .input-modal {
         width: 80%;
         height: 30px;
-        margin-left: 60px;
+        margin-left: 30px;
         margin-top: 30px;
         border: none;
         border-bottom: 2px solid #d9b540;
@@ -3177,7 +3066,7 @@ margin-top: 20px;
         color:#D6B751;
         font-weight: bold;
         font-size: 16px;
-        margin-top: -2px;
+        margin-top: 0px;
         position: absolute;
         text-align: center;
     
@@ -3193,7 +3082,7 @@ margin-top: 20px;
         border-radius: 70px;
         width: 110px;
         height: 50px;
-        margin-left: 190px;
+        margin-left: 120px;
         background-color: #3A4D57;
         color: #fff;
         font-family: var(--fuente2);
@@ -3214,7 +3103,8 @@ margin-top: 20px;
         width: 40px;
         height: 40px;
         color: #fff;
-        margin-left: 465px;
+        margin-left: 90%;
+        margin-top: -4%;
         border-radius: 50%;
         background-color: #9E7605;
         position: absolute;
@@ -3364,7 +3254,7 @@ margin-top: 20px;
     
     .texto-modal-regalos h1 {
         font-family: var(--fuente4);
-        margin-left: 190px;
+        margin-left: 100px;
         color: #3a4d57;
         margin-bottom: 30px;
         font-size: 40px;
@@ -3563,8 +3453,6 @@ margin-top: 20px;
 
 }
 
-
-
 @media only screen and (min-device-height : 667px) and (max-device-height : 799px) and (min-device-width : 320px) and (max-device-width : 480px) {
 
     .carousel__anterior,.carousel__siguiente{
@@ -3738,4 +3626,3 @@ margin-top: 20px;
 
 
 }
-

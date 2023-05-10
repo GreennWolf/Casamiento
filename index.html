@@ -87,8 +87,8 @@
             </div>
             <form action="./src/civil.php" method="POST">
                 <div class="opciones-asistencia">
-                    <input checked type="radio" name="confirmacion" id="si-civil"> <label for="si-civil">¡Si, Confirmo!</label>
-                    <input type="radio" name="confirmacion" id="no-civil"> <label for="no-civil">¡No Puedo :(</label>
+                    <input checked type="radio" name="confirmacion-si" id="si-civil"> <label for="si-civil">¡Si, Confirmo!</label>
+                    <input type="radio" name="confirmacion-no" id="no-civil"> <label for="no-civil">¡No Puedo :(</label>
                 </div>
                 <div class="inputs-container">
                     <input class="input-modal" required type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo">
@@ -116,8 +116,8 @@
             </div>
             <form action="./src/fiesta.php" method="POST">
                 <div class="opciones-asistencia">
-                    <input checked type="radio" name="confirmacion" id="si-fiesta"> <label for="si-fiesta">¡Si, Confirmo!</label>
-                    <input type="radio" name="confirmacion" id="no-fiesta"> <label for="no-fiesta">¡No Puedo :(</label>
+                    <input checked type="radio" name="confirmacion-si" id="si-fiesta"> <label for="si-fiesta">¡Si, Confirmo!</label>
+                    <input type="radio" name="confirmacion-no" id="no-fiesta"> <label for="no-fiesta">¡No Puedo :(</label>
                 </div>
                 <div class="inputs-container">
                     <input class="input-modal" required type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo">
@@ -129,24 +129,24 @@
       </dialog>
 
       <dialog id="modal-cancion">
-        <div class="modal-container-cancion">
-            <div id="close-cancion" class="close-modal-cancion">X</div>
-            <div class="icono-modal-cancion">
-                <picture class="cancion-modal">
+        <div class="modal-container">
+            <div id="close-cancion" class="close-modal">X</div>
+            <div class="icono-modal">
+                <picture class="avion-modal">
                     <source type="image/webp" srcset="./img/viaje_Grupo04.webp">
                     <source type="image/png" srcset="./img/viaje_Grupo04.png">
                     <img class="adorno adorno-1" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-once="false" src="./img/viaje_Grupo04.png" alt="" loading="">
                   </picture>
-                <img class="cancion-modal" src="./img/img_circuloCanciones1.svg" alt="">   
+                <img class="circulo-modal" src="./img/img_circuloCanciones1.svg" alt="">   
             </div>
-            <div class="texto-modal-cancion">
+            <div class="texto-modal">
                 <h1>Sugerir Cancion</h1>
             </div>
             <form action="./src/musica.php" mothod="GET">
-                <div class="inputs-container-cancion">
-                    <input class="input-modal-cancion" required type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
-                    <input class="input-modal-cancion" type="text" name="cancion" id="cancion" placeholder="Ingrese nombre de la cancion">
-                    <input class="input-modal-cancion" type="text" name="link" id="link" placeholder="Coloca aqui el link">
+                <div class="inputs-container">
+                    <input class="input-modal" required type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                    <input class="input-modal" type="text" name="cancion" id="cancion" placeholder="Ingrese nombre de la cancion">
+                    <input class="input-modal" type="text" name="link" id="link" placeholder="Coloca aqui el link">
                     <button>Enviar</button>
                 </div>
             </form>
@@ -155,15 +155,15 @@
       </dialog>
 
       <dialog id="modal-regalos">
-        <div class="modal-container-regalos">
-            <div id="close-regalos" class="close-modal-regalos">X</div>
-            <div class="icono-modal-regalos">
-                <picture class="regalos-modal">
+        <div class="modal-container">
+            <div id="close-regalos" class="close-modal">X</div>
+            <div class="icono-modal">
+                <picture class="avion-modal">
                     <source type="image/webp" srcset="./img/viaje_Grupo04.webp">
                     <source type="image/png" srcset="./img/viaje_Grupo04.png">
                     <img class="adorno adorno-1" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-once="false" src="./img/viaje_Grupo04.png" alt="" loading="">
                   </picture>
-                <img class="regalos-modal" src="./img/img_circuloRegalo.svg" alt="">   
+                <img class="circulo-modal" src="./img/img_circuloRegalo.svg" alt="">   
             </div>
             <div class="texto-modal-regalos">
                 <h1>Regalos</h1>
@@ -254,35 +254,6 @@
             <div class="icono-foto">
             </div>
         </div>
-        <!-- <div class="galeria" id="galeria">
-            <img class="slidersection" src="./img/si/20180809_141206.jpg" alt="">
-            <img class="slidersection" src="./img/si/DSC00600.jpg" alt="">
-            <img class="slidersection" src="./img/si/thumbnail_IMG_0663 (1).jpg" alt="">
-            <img class="slidersection" src="./img/si/thumbnail_IMG_2170.jpg" alt="">
-            <img class="slidersection" src="./img/si/thumbnail_IMG_2400.jpg" alt="">
-            <img class="slidersection" src="./img/si/thumbnail_IMG_8152.jpg" alt="">
-        </div>
-        <div class="galeria-m" id="galeria-m">
-            <img class="slidersection-m" src="./img/si/20180809_141206.jpg" alt="">
-            <img class="slidersection-m" src="./img/si/DSC00600.jpg" alt="">
-            <img class="slidersection-m" id="foto4" src="./img/si/thumbnail_IMG_0663 (1).jpg" alt="">
-            <img class="slidersection-m" src="./img/si/thumbnail_IMG_2170.jpg" alt="">
-            <img class="slidersection-m" src="./img/si/thumbnail_IMG_2400.jpg" alt="">
-            <img class="slidersection-m" src="./img/si/thumbnail_IMG_8152.jpg" alt="">
-        </div>
-        <div class="btns">
-            <p class="btn" id="btn-galeria1"></p>
-            <p class="btn active" id="btn-galeria2"></p>
-            <p class="btn" id="btn-galeria3"></p>
-            <p class="btn" id="btn-galeria4"></p>
-        </div>
-        <div class="btns-m">
-            <p class="btn" id="btn-m-galeria1"></p>
-            <p class="btn active" id="btn-m-galeria2"></p>
-            <p class="btn" id="btn-m-galeria3"></p>
-            <p class="btn" id="btn-m-galeria4"></p>
-        </div>
-    </div> -->
     <div class="carousel">
         <div class="carousel__contenedor">
             <button aria-label="Anterior" class="carousel__anterior">
@@ -364,8 +335,8 @@
 <script src="./src/jquery-3.6.3.min.js"></script>
 <script src="./src/lottie.min.js"></script>
 <script src="./src/jquery.slides.js"></script>
-<script src="./index.js"></script>
 <script src="./src/carousel.js"></script>
+<script src="./index.js"></script>
 
 </body>
 </html>
