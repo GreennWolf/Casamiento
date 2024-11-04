@@ -140,8 +140,8 @@ let animRegalos = bodymovin.loadAnimation({
 
 animRegalos.play();
 
-var fechaCuentaRegresiva = "12/02/2023 20:00:00";
-var lang_textoFinalCuentaRegresiva  = 'A tu casa papi'
+var fechaCuentaRegresiva = "12/02/2026 20:00:00";
+var lang_textoFinalCuentaRegresiva  = 'Te lo perdiste :('
 
     // Set the date we're counting down to
     var countDownDate = new Date(fechaCuentaRegresiva).getTime();
