@@ -1277,34 +1277,13 @@ margin-top: 20px;
         display: none;
     }
     
-    .countdown-container {
-        width: 100%;
-        height: 70vh;
-    }
-    
-    .countdown-container img {
-        position: absolute;
-        top: 200px;
-        margin-top: 150px;
-        display: none;
-    }
+
     
     .mundo {
         width: 100%;
         height: 63%;
-        margin-left: 3%;
-        position: absolute;
-        top: 130%;
     }
     
-    .countdown {
-        position: absolute;
-        left: 185%;
-        top: 87%;
-        color: #3A4D57;
-        font-size: 25px;
-        font-family: var(--fuente3);
-    }
     
     .countdown h1 {
         width: 400%;
@@ -2436,15 +2415,9 @@ margin-top: 20px;
     .mundo {
         width: 100%;
         height: 63%;
-        margin-left: 3%;
-        position: absolute;
-        top: 120%;
     }
     
     .countdown {
-        position: absolute;
-        left: 190%;
-        top: 90%;
         color: #3A4D57;
         font-size: 25px;
         font-family: var(--fuente3);
