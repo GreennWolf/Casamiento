@@ -257,14 +257,15 @@ color: #3A4D57;
     width: 450px;
     height: 430px;
     margin-left: 32%;
-    position: absolute;
+    position: relative;
     top: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .countdown {
     position: absolute;
-    left: 44%;
-    top: 115%;
     color: #3A4D57;
     font-size: 25px;
     font-family: var(--fuente3);
