@@ -255,20 +255,22 @@ color: #3A4D57;
 
 .mundo {
     width: 450px;
-    height: 430px;
-    margin-left: 32%;
-    position: relative;
+    height: 450px;
+    position: absolute;
     top: 100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .countdown {
     position: absolute;
     color: #3A4D57;
     font-size: 25px;
+    margin-left: 12%;
     font-family: var(--fuente3);
+    z-index: 20;
 }
 
 .countdown h1 {
